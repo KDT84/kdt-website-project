@@ -1,79 +1,86 @@
 body {
     /* font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px; */
-    /* line-height: 1.5;  */
-    /* lineheight is the amount of space between each line */
-   /* below is the shorthand property for the three above */
+    font-size: 15px; 
+    line-height: 1.5;  
+    lineheight is the amount of space between each line 
+    below is the shorthand property for the three above */
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
 }
-/* -----------------------Global you can put anywhere----------------------- */
-.container {
-    /* I want this to be responsive to i dont want to
-    set to Px but in percentage instead */
-    /*  I set the margin here to auto so
-    there would be space to the left */
-    /* if something goes out of the div I dont want a
+
+/* I want this to be responsive to i dont want to
+    set to Px but in percentage instead 
+    I set the margin here to auto so
+    there would be space to the left 
+    if something goes out of the div I dont want a
     scroll bar here so im setting the overflow to a hidden value
     I want the content to be hidden */
+.container, #entertainment {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
-/* by default unordered lists have paddings so here i set the margin and padding to zero*/
-/* all uls are set to zero margin and o padding */
+/* by default unordered lists have paddings so here i set the margin and padding to zero 
+all uls are set to zero margin and o padding */
+
 ul {
     margin: 0;
     padding: 0;
 }
 
-.button {
-    height: 38px;
-    background: grey;
-    /* by default button has border so i want to set it to 0 */
-    border: 1px solid black;
-    /* padding-left: 20px; */
-    /* padding-right: 20px; */
-    color: black;
-
+/*  eliminated link underline */
+a {
+    text-decoration: none;
 }
+
+.home_button img {
+    width: 20px;
+    height: 20px;
+}
+
+p {
+    font-size: 18px;
+    text-indent: 50px;
+    text-align: justify;
+ }
+
 /* -------------------------------------END OF GLOBAL------------------------- */
 
 /* HEADER */
 
 header {
-    background: maroon;
-    /* color: white; */
-    /* padding-top: 30px; */
-    /* here i set a min height that way if it's responsive adn the screen is smaller or the menu goes into the next line we want the hight to adjust. So the minimum height is going to be 70px */
+    background: rgba(128, 0, 0, 0.737);
+    /* 
+    here i set a min height that way if 
+    it's responsive and the screen is smaller
+     or the menu goes into the next line we 
+     want the hight to adjust. So the minimum height is going to be 70px 
+    setting the nav border to orange */
     min-height: 70px;
-    /* setting the nav border to orange */
     border-bottom: orange 10px solid;
 }
 
-/* header a links */
-/* setting the text decoration to none for the underline in the a links */
-/* I set the text to transform by using the text transform property */
+/* header a links 
+setting the text decoration to none for the underline in the a links 
+I set the text to transform by using the text transform property */
 header a {
     color: #ffffff;
-    text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
 }
+
 /* setting some designs for the navigation links */
 li a{
     font-weight: bold;
-    /* padding: 2px; */
 } 
  li a:hover {
     color: orange;
  }
-/* setting some designs for the navigation links */
 
-/* here we set the lis to float left */
+/* here we set the list to float left */
 /* here we set some padding on the left and right to have some space in bettween the links.
  so im using here the shorthand property padding */
  /* i set the dispaly to inline to it would position next to each other */
@@ -95,10 +102,9 @@ header nav {
 
 header .medialinks {
     float: right;
-    /* padding-left: 5px; */
-    /* padding-right: 5px; */
 }
 
+/* Media icons */
  .medialinks img {
     width: 30px;
     height: 30px;
@@ -110,17 +116,16 @@ header .medialinks {
 /* ---------------MAIN CONTENT------------------ */
 /* i set the min height. We want to be flexible everythign should be responsive
 I dont want to put a fixed height so i'll put a min-height. We dont want the image to repeat here so I put a repeat*/
-#main {
+/* #main {
     min-height: 400px;
-    /* background: url(./images/wallpaper.jpg) no-repeat; */
-}
+} */
 /* set the widtht and height of the profile pic */
  .aboutme img {
     width: 110px;
     height: 110px;
     margin-top: 1em;
     border-radius: 3em;
-   border: 5px solid maroon;
+   border: 5px solid orange;
  }
 
  .aboutme h1 {
@@ -130,45 +135,75 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
  .aboutme h3 {
     margin: 0;
  }
-/* indented the paragraphs */
- .aboutme p {
-    text-indent: 50px;
-    text-align: justify;
+/* -----------------------Entertainment------------------------- */
+ .entertainment {
+    background-color:  rgba(128, 0, 0, 0.737);
+    text-align: center;
+    padding: 10px 80px;
  }
-/* set the width and height of social media links img  */
-
- .container p {
-    font-size: 18px;
- }
-/* -----------------------NEWSLETTER------------------------- */
- #email {
-    background-color: maroon;
- }
-
- #email form {
-    float: left;
-    margin-top: 15px;
- }
-
- #email input[type="email1"] {
-    padding: 4px;
-    height: 15px;
-    width: 250px;
- }
-
- /* -----------------BOXES----------------- */
 /* everything is responsive so it's gonna be percentage */
-
 
  /* -------------------------------END OF BOXES---------------------------- */
 
  footer {
-    margin-top: 3px;
-    padding: 3px;
+    margin-top: 1px;
+    margin-bottom: 0;
+    padding: 1px;
+    font-size: 20px;
     color: black;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.488);
     text-align: center;
     font-weight: bold;
  }
-
   /* -------------------------------END OF FOOTER---------------------------- */
+
+  /*----Skills page---- */
+
+  .skills h1 {
+    margin-top: 30px;
+  }
+
+  ol {
+   font-weight: bold;
+  }
+
+    /*----work page---- */
+    .work h1 {
+        margin-top: 30px;
+      }
+    
+    /*----contact page---- */
+
+    .title {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .label {
+        font-weight: bold;
+    }
+
+    a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    input .email_field {
+        background-color: whitesmoke;
+    }
+
+    .home_icon {
+        text-align: center;
+        font-size: large;
+    }
+
+    .contact_title_bar {
+        color: white;
+        font-size: 13px;
+    }
+
+    h4 {
+        margin-top: 0;
+    }
+
+    
