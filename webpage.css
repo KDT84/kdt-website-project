@@ -32,7 +32,7 @@ ul {
 
 .button {
     height: 38px;
-    background: grey;       
+    background: grey;
     /* by default button has border so i want to set it to 0 */
     border: 1px solid black;
     /* padding-left: 20px; */
@@ -45,13 +45,13 @@ ul {
 /* HEADER */
 
 header {
-    background: rgba(78, 124, 8, 0.575);
-    color: white;
+    background: maroon;
+    /* color: white; */
     /* padding-top: 30px; */
-    /* here i set a min height that way if it's responsive adn the screen is smaller or the menu goes into the next line we wan the hight to adjust. So the minimum height is going to be 70px */
+    /* here i set a min height that way if it's responsive adn the screen is smaller or the menu goes into the next line we want the hight to adjust. So the minimum height is going to be 70px */
     min-height: 70px;
     /* setting the nav border to orange */
-    border-bottom: orange 3px solid;
+    border-bottom: orange 10px solid;
 }
 
 /* header a links */
@@ -64,19 +64,13 @@ header a {
     font-size: 16px;
 }
 /* setting some designs for the navigation links */
-header a:hover {
-    color: white;
-    background-color: black;
+li a{
     font-weight: bold;
-    padding: 2px;
-    border: 2px solid blue;
-}
-
-header a:focus {
-    color: white;
-    background-color: black;
-    font-weight: bold;
-}
+    /* padding: 2px; */
+} 
+ li a:hover {
+    color: orange;
+ }
 /* setting some designs for the navigation links */
 
 /* here we set the lis to float left */
@@ -84,9 +78,13 @@ header a:focus {
  so im using here the shorthand property padding */
  /* i set the dispaly to inline to it would position next to each other */
 header li {
-    float: left;
     display: inline;
+    float: left;
     padding: 0 12px 0 12px;
+}
+
+header .medialinks {
+    float: right;
 }
 
 /* moving the margin here a lil bit down */
@@ -97,9 +95,17 @@ header nav {
 
 header .medialinks {
     float: right;
-    padding-left: 5px;
-    padding-right: 5px;
+    /* padding-left: 5px; */
+    /* padding-right: 5px; */
 }
+
+ .medialinks img {
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+    padding: 0;
+ }
+
 
 /* ---------------MAIN CONTENT------------------ */
 /* i set the min height. We want to be flexible everythign should be responsive
@@ -114,7 +120,7 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
     height: 110px;
     margin-top: 1em;
     border-radius: 3em;
-   border: 5px solid orange;
+   border: 5px solid maroon;
  }
 
  .aboutme h1 {
@@ -130,30 +136,26 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
     text-align: justify;
  }
 /* set the width and height of social media links img  */
- .medialinks img {
-    width: 30px;
-    height: 30px;
- }
 
  .container p {
     font-size: 18px;
  }
 /* -----------------------NEWSLETTER------------------------- */
- #newsletter {
+ #email {
     color: pink;
-    background-color: goldenrod;
+    background-color: maroon;
  }
 
- #newsletter h1 {
+ /* #email h1 {
     float: left;
- }
+ } */
 
- #newsletter form {
-    float: right;
+ #email form {
+    float: left;
     margin-top: 15px;
  }
 
- #newsletter input[type="email"] {
+ #email input[type="email1"] {
     padding: 4px;
     height: 15px;
     width: 250px;
@@ -162,20 +164,12 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
  /* -----------------BOXES----------------- */
 /* everything is responsive so it's gonna be percentage */
 
- #media .medialinks {
-    float: left;
-    width: 22%;
-    padding: 8px;
- }
-
- #media .medialinks img {
-    width: 50px;
- }
 
  /* -------------------------------END OF BOXES---------------------------- */
 
  footer {
-    padding: 5px;
+    margin-top: 3px;
+    padding: 3px;
     color: black;
     background-color: grey;
     text-align: center;
