@@ -142,13 +142,8 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
  }
 /* -----------------------NEWSLETTER------------------------- */
  #email {
-    color: pink;
     background-color: maroon;
  }
-
- /* #email h1 {
-    float: left;
- } */
 
  #email form {
     float: left;
@@ -175,3 +170,5 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
     text-align: center;
     font-weight: bold;
  }
+
+  /* -------------------------------END OF FOOTER---------------------------- */
