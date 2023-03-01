@@ -7,19 +7,19 @@ body {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: paleturquoise;
+    background-color: whitesmoke;
 }
 /* -----------------------Global you can put anywhere----------------------- */
 .container {
     /* I want this to be responsive to i dont want to
     set to Px but in percentage instead */
-    width: 80%;
     /*  I set the margin here to auto so
     there would be space to the left */
-    margin: auto;
     /* if something goes out of the div I dont want a
     scroll bar here so im setting the overflow to a hidden value
     I want the content to be hidden */
+    width: 80%;
+    margin: auto;
     overflow: hidden;
 }
 
@@ -32,21 +32,22 @@ ul {
 
 .button {
     height: 38px;
-    background: grey;
+    background: grey;       
     /* by default button has border so i want to set it to 0 */
-    border: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: yellow;
+    border: 1px solid black;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    color: black;
+
 }
 /* -------------------------------------END OF GLOBAL------------------------- */
 
 /* HEADER */
 
 header {
-    background: grey;
+    background: rgba(78, 124, 8, 0.575);
     color: white;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     /* here i set a min height that way if it's responsive adn the screen is smaller or the menu goes into the next line we wan the hight to adjust. So the minimum height is going to be 70px */
     min-height: 70px;
     /* setting the nav border to orange */
@@ -75,7 +76,7 @@ header a:focus {
     color: white;
     background-color: black;
     font-weight: bold;
-} 
+}
 /* setting some designs for the navigation links */
 
 /* here we set the lis to float left */
@@ -83,41 +84,62 @@ header a:focus {
  so im using here the shorthand property padding */
  /* i set the dispaly to inline to it would position next to each other */
 header li {
-    /* float: left; */
+    float: left;
     display: inline;
     padding: 0 12px 0 12px;
 }
 
 /* moving the margin here a lil bit down */
 header nav {
-    /* float: right; */
-    margin-top: 10px; 
-} 
+    margin-top: 22px;
+    margin-bottom: 0;
+}
+
+header .medialinks {
+    float: right;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 /* ---------------MAIN CONTENT------------------ */
-/* i set the min height. We want to be flexible everythign should be responsive 
+/* i set the min height. We want to be flexible everythign should be responsive
 I dont want to put a fixed height so i'll put a min-height. We dont want the image to repeat here so I put a repeat*/
 #main {
     min-height: 400px;
+    /* background: url(./images/wallpaper.jpg) no-repeat; */
 }
 /* set the widtht and height of the profile pic */
  .aboutme img {
     width: 110px;
     height: 110px;
-    padding-top: 23px;
+    margin-top: 1em;
+    border-radius: 3em;
+   border: 5px solid orange;
+ }
+
+ .aboutme h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+ }
+ .aboutme h3 {
+    margin: 0;
+ }
+/* indented the paragraphs */
+ .aboutme p {
+    text-indent: 50px;
+    text-align: justify;
  }
 /* set the width and height of social media links img  */
  .medialinks img {
-    width: 110px;
-    height: 110px;
- }  
+    width: 30px;
+    height: 30px;
+ }
 
  .container p {
     font-size: 18px;
  }
 /* -----------------------NEWSLETTER------------------------- */
  #newsletter {
-    padding: 15px;
     color: pink;
     background-color: goldenrod;
  }
@@ -133,34 +155,29 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
 
  #newsletter input[type="email"] {
     padding: 4px;
-    height: 25px;
+    height: 15px;
     width: 250px;
  }
 
  /* -----------------BOXES----------------- */
 /* everything is responsive so it's gonna be percentage */
 
-#boxes {
-    margin-top: 20px;
-}
- #boxes .medialinks {
+ #media .medialinks {
     float: left;
-    width: 30%;
-    padding: 10px;
+    width: 22%;
+    padding: 8px;
  }
 
- #boxes .medialinks img {
+ #media .medialinks img {
     width: 50px;
-
  }
 
  /* -------------------------------END OF BOXES---------------------------- */
 
  footer {
-    padding: 20px;
-    margin-top: 20px;
+    padding: 5px;
     color: black;
-    background-color: pink;
+    background-color: grey;
     text-align: center;
     font-weight: bold;
  }
