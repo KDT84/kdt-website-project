@@ -1,119 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Webpage Project">
-    <meta name="author" content="Kathyrine DT">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <!-- allows media queries and responsive designs -->
-    <link rel="stylesheet" href="./webpage.css">
-    <title>Webpage Project</title>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="nav">
-                    <ul class="navigation">
-                        <li><a href="./home.html">Home</a></li>
-                        <li><a href="./skills.html">Skills</a></li>
-                        <li><a href="./work.html">Work</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                
-                    <ul class="medialinks"> 
-                        <li><a href="https://www.facebook.com/" target="_blank"><img src="./images/fontawesome-free-6.3.0-desktop/facebook.svg" alt="facebook"></a></li>
-                        <li><a href="https://www.instagram.com/" target="_blank"><img src="./images/fontawesome-free-6.3.0-desktop/instagram.svg" alt="instagram"></a></li>
-                        <li><a href="https://www.linkedin.com/" target="_blank"><img src="./images/fontawesome-free-6.3.0-desktop/linkedin.svg" alt="linkedin"></a></li>
-                        <li><a href="https://www.twitter.com/" target="_blank"><img src="./images/fontawesome-free-6.3.0-desktop/twitter.svg" alt="Twitter"></a></li>
-                    </ul>
-                </div>
-            </nav>  
-        </div>
-    </header>
-    
-    <section id="main content">
-        <div class="container aboutme">
-            <img src="./images/profilephoto.jpg" alt="profile photo">
-        </div>
-    </section>
-
-    <section>
-        <div class="entertainment">
-            <button href="#"> Travels</button>
-            <button href="#"> Sports</button>
-            <button href="#">Food</button>
-        </div>
-    </section>
-
-    <main>
-        <section class="container">
-            <form action="./formresults.html" method="get" id="form"> <br>
-            
-                <label class="label title">PLEASE ENTER YOUR DETAILS HERE:</label> <br/><br/>
-               
-                    <div class="label first name">
-                        <label for="for-first-name">First Name</label><br/>
-                        <input id="for-first-name" type="text" name="first-name" placeholder="Enter First Name" required/>
-                    </div><br/>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Webpage Project">
+        <meta name="author" content="Kathyrine DT">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- allows media queries and responsive designs -->
+        <link rel="stylesheet" href="./webpage.css">
+        <title>Webpage Project</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="nav">
+                        <ul class="navigation">
+                            <li><a href="./home.html">Home</a></li>
+                            <li><a href="./skills.html">Skills</a></li>
+                            <li><a href="./work.html">Work</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
                     
-                
-                    <div class="label last name">
-                        <label for="for-last-name">Last Name</label><br/>
-                        <input id= "for-last-name" type="text" name="last-name" placeholder="Enter Last Name" required/>
-                    </div> <br/>
-                   
-
-                    <div class="label contact">
-                        <label for="for-tel">Contact Number</label><br/>
-                        <input id="for-tel" type="tel" name="telephone" placeholder="Enter Telephone" required/>
-                    </div><br/>
-                    
-
-                    <div class="label dob">
-                        <label for="for-date">Date of Birth</label><br/>
-                        <input id="for-date" type="date" name="date" required/>
-                    </div> <br/>
-                   
-                
-                    <div class="label message">
-                        <label>Message</label> <br>
-                        <textarea name="message" rows="10"  cols="50" placeholder="Enter you message here..."></textarea><br>
-                        <input type="Submit" value="submit">
-                    </div><br/>
-                  
-            </form><hr>
-
-            <section class="contacts">
-                <h4>OR</h4>
-
-                <div class="email">
-                    <a href="mailto:delatorrekathyrine@gmail.com">
-                        <img src="./images/fontawesome-free-6.3.0-desktop/svgs/solid/phone.svg" alt="mail">Email Address
-                    </a>
-                </div>
-
-                <div class="telephone">
-                    <a href="888888888">
-                        <img src="./images/fontawesome-free-6.3.0-desktop/svgs/solid/envelope.svg" alt="telephone number">Contact Number 
-                    </a>
-                </div>
-            </section>
-
-            <div class="home_button">
-                <a href="./home.html">
-                    <img src="./images/fontawesome-free-6.3.0-desktop/svgs/solid/house.svg" alt="home">&nbspBack to Menu
-                </a>
+                        <ul class="medialinks"> 
+                            <li><a href="https://www.facebook.com/" target="_blank"><img src="./images/fontawesome-free-6.3.0-desktop/facebook.svg" alt="facebook"></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><img src="./images/fontawesome-free-6.3.0-desktop/instagram.svg" alt="instagram"></a></li>
+                            <li><a href="https://www.linkedin.com/" target="_blank"><img src="./images/fontawesome-free-6.3.0-desktop/linkedin.svg" alt="linkedin"></a></li>
+                            <li><a href="https://www.twitter.com/" target="_blank"><img src="./images/fontawesome-free-6.3.0-desktop/twitter.svg" alt="Twitter"></a></li>
+                        </ul>
+                    </div>
+                </nav>  
             </div>
-
+        </header>
+        
+        <section>
+            <div id="entertainment">
+                <button href="#"> Travels</button>
+                <button href="#"> Sports</button>
+                <button href="#">Food</button>
+            </div>
         </section>
-    </main>
 
-    <footer>
-        <h6>&lt&lt&ltKDT WEBSITE PROJECT 2023&gt&gt&gt</h6>
-    </footer>
+        <main>
+            <section class="container">
+                <form action="./formresults.html" method="get" id="form"> <br>
+                
+                    <label class="label title">PLEASE ENTER YOUR DETAILS HERE:</label> <br/><br/>
+                
+                        <div class="label first name">
+                            <label for="first_name">First Name</label><br/>
+                            <input id="first_name" type="text" name="first_name" placeholder="Enter First Name" required/>
+                        </div><br/>
+                    
+                        <div class="label last name">
+                            <label for="last_name">Last Name</label><br/>
+                            <input id= "last_name" type="text" name="last_name" placeholder="Enter Last Name" required/>
+                        </div> <br/>
 
-</body>
+                        <div class="label contact">
+                            <label for="tel">Contact Number</label><br/>
+                            <input id="tel" type="tel" name="tel" placeholder="Enter Telephone" required/>
+                        </div><br/>
+                        
+                        <div class="label dob">
+                            <label for="date">Date of Birth</label><br/>
+                            <input id="date" type="date" name="date" required/>
+                        </div> <br/>
+                    
+                        <div class="label message">
+                            <label>Message</label> <br>
+                            <textarea name="message" rows="10"  cols="50" placeholder="Enter you message here..."></textarea><br>
+                            <input type="Submit" value="submit">
+                        </div><br/>
+                    
+                </form><hr>
+
+                <section class="contacts">
+                    <h4>OR</h4>
+
+                    <div class="email">
+                        <a href="mailto:delatorrekathyrine@gmail.com">
+                            <img src="./images/fontawesome-free-6.3.0-desktop/svgs/solid/envelope.svg" alt="email">&nbsp Email: delatorrekathyrine@gmail.com 
+                        </a>
+                    </div>
+
+                    <div class="telephone">
+                        <a href="tel:+61457211498">
+                            <img src="./images/fontawesome-free-6.3.0-desktop/svgs/solid/phone.svg" alt="telephone">&nbsp Contact no: +61 888 888 888
+                        </a>
+                    </div>
+                </section><br/><br/>
+
+                <section>
+                        <div class="home_button">
+                            <a href="./home.html">
+                                <img src="./images/fontawesome-free-6.3.0-desktop/svgs/solid/house.svg" alt="home">&nbspBack to Menu
+                            </a>
+                        </div>
+                </section>
+
+            </section><br/>
+        </main>
+
+        <footer>
+            <h2>&lt&lt&ltKDT WEBSITE PROJECT &copy2023&gt&gt&gt</h2>
+        </footer>
+
+    </body>
 </html>

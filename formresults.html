@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Webpage Project">
-    <meta name="author" content="Kathyrine DT">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- allows media queries and responsive designs -->
-    <link rel="stylesheet" href="./webpage.css">
-    <title>Webpage Project</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Webpage Project">
+        <meta name="author" content="Kathyrine DT">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./webpage.css">
+        <title>Webpage Project</title>
+    </head>
     <body>
-        <div id="results"></div>
-        <br/><br/>
-
-        <div class="home_button">
+        <div id="results"></div><br/><br/>
+        
+        <div id="home_button">
             <a href="./home.html">
-                <img src="./images/fontawesome-free-6.3.0-desktop/svgs/solid/house.svg" alt="">&nbspHome
+                <img src="./images/fontawesome-free-6.3.0-desktop/svgs/solid/house.svg" alt="">&nbspBac to Menu
             </a>
         </div>
 
+        <!-- Using JavaScript -->
+        
         <script>
             const resultslist = document.getElementById('results')
             new URLSearchParams(window.location.search).forEach((value, name) => {
@@ -28,6 +28,10 @@
                 resultslist.append(document.createElement('br'))
             })
         </script>
-    </body>
 
+        <footer>
+            <h2>&lt&lt&ltKDT WEBSITE PROJECT &copy2023&gt&gt&gt</h2>
+        </footer>
+
+    </body>
 </html>

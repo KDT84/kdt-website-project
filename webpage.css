@@ -17,7 +17,7 @@ body {
     if something goes out of the div I dont want a
     scroll bar here so im setting the overflow to a hidden value
     I want the content to be hidden */
-.container, #entertainment {
+.container {
     width: 80%;
     margin: auto;
     overflow: hidden;
@@ -36,9 +36,18 @@ a {
     text-decoration: none;
 }
 
+.home_button {
+    text-align: center;
+    color: black;
+}
+
 .home_button img {
     width: 20px;
     height: 20px;
+}
+.home_button a:hover {
+    color: maroon;
+    font-weight: bold;
 }
 
 p {
@@ -46,6 +55,23 @@ p {
     text-indent: 50px;
     text-align: justify;
  }
+
+ footer {
+    margin: 0;
+    font-size: 10px;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.849);
+    text-align: center;
+    font-weight: bold;
+ }
+
+ footer h2 {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid black;
+ }
+
 
 /* -------------------------------------END OF GLOBAL------------------------- */
 
@@ -136,7 +162,7 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
     margin: 0;
  }
 /* -----------------------Entertainment------------------------- */
- .entertainment {
+ #entertainment {
     background-color:  rgba(128, 0, 0, 0.737);
     text-align: center;
     padding: 10px 80px;
@@ -145,16 +171,6 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
 
  /* -------------------------------END OF BOXES---------------------------- */
 
- footer {
-    margin-top: 1px;
-    margin-bottom: 0;
-    padding: 1px;
-    font-size: 20px;
-    color: black;
-    background-color: rgba(128, 128, 128, 0.488);
-    text-align: center;
-    font-weight: bold;
- }
   /* -------------------------------END OF FOOTER---------------------------- */
 
   /*----Skills page---- */
@@ -206,4 +222,9 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
         margin-top: 0;
     }
 
-    
+    /* Contacts */
+
+    .contacts a:hover {
+        color: maroon;
+        font-weight: bold;
+    }
