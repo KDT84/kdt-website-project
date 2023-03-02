@@ -23,20 +23,12 @@ body {
     overflow: hidden;
 }
 
-@media screen and (min-width: 1400px)  { 
-    .medialinks {
-        float: none;
-        /* display: block; */
-    }
-}
-
-
 /* by default unordered lists have paddings so here i set the margin and padding to zero 
 all uls are set to zero margin and o padding */
 
 ul {
     margin: 0; 
-    padding: 0; 
+    padding: 0;
 }
     
 a { 
@@ -83,16 +75,16 @@ p {
 
 /* -------------------------------------END OF GLOBAL------------------------- */
 
-/* HEADER */
+/* NAVIGATION */
 
 header {
-    background: rgba(128, 0, 0, 0.737);
     /* 
     here i set a min height that way if 
     it's responsive and the screen is smaller
      or the menu goes into the next line we 
      want the hight to adjust. So the minimum height is going to be 70px 
     setting the nav border to orange */
+    background: rgba(128, 0, 0, 0.737);
     min-height: 70px;
     border-bottom: orange 10px solid;
 }
@@ -108,7 +100,7 @@ header a {
 }
 
 /* setting some designs for the navigation links */
-li a:hover {
+header li a:hover {
     color: orange;
  }
 
@@ -172,26 +164,43 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
  #entertainment {
     background-color:  rgba(128, 0, 0, 0.737);
     text-align: center;
-    /* padding: 10px 80px;
-    min-height: 60px; */
     margin-top: 10px;
     padding: 15px 0;
+    /* margin: 10px; */
  }
 
- .adventures {
-    display: inline-block;
+ .adventures ul li {
+    display: inline;
+    margin-left: 10px;   
  }
 
- .adventures a{
+ .adventures a {
     background-color: orange;
     color: black;
     font-size: 17px;
     font-weight: black;
     border-radius: 6px;
     border: 1px solid black;
-    padding: 5px 10px;
-    margin: 0 15px 0; 
+    /* margin: 0 15px 0;   */
  }
+ 
+ .adventures a:hover {
+    color: maroon;
+    font-weight: bold;
+ }
+
+ .adventures img {
+    width: 30px;
+    height: 15px;
+ }
+
+ /* @media screen and (min-width: 200px) {
+    .adventures ul {
+        display: block;
+        margin-left: 10px;
+        height: 700;}
+  } */
+ 
 
  /* Boxes */
 
@@ -205,7 +214,8 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
     margin-top: 30px;
   }
   .skills1 img {
-    height: 30px;
+    width: 50px;
+    height: 40px;
 }
 
   ol {
@@ -213,9 +223,14 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
   }
 
 /*----work page---- */
-    .work h1 {
+    .work1 h1 {
         margin-top: 30px;
       }
+
+    .work1 img {
+        width: 50px;
+        height: 40px;
+    }
     
 /*----contact page---- */
 
