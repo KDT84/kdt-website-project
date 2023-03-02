@@ -1,7 +1,7 @@
 # PERSONAL WEBSITE
 
-This website is intended for school purposes. 
-This website tells a story about my personal including the following:
+This website is intended for school purposes and future use as well.
+This website tells a story about my personal life including the following:
 
 -Work
 -Skills
@@ -26,12 +26,14 @@ https://readme.so/editor)
 
 -[Youtube] (https://youtube.com)
 
+- [Lorem generator]
+
+
 
 # AUTHOR
 
 -[Kathyrine Dela Torre] (https://www.github.com/KDT84)
 
-#BADGES
 
 # COLOUR REFERENCE
 
@@ -44,6 +46,11 @@ https://readme.so/editor)
 - rgba(128, 0, 0, 0.737)
 - 
 
+# TECHNOLOGIES
+
+- HTML
+- CSS
+- 
 
 
 
