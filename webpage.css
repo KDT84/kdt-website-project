@@ -10,25 +10,24 @@ body {
     background-color: whitesmoke;
 }
 
-/* I want this to be responsive to i dont want to
-    set to Px but in percentage instead 
-    I set the margin here to auto so
-    there would be space to the left 
-    if something goes out of the div I dont want a
-    scroll bar here so im setting the overflow to a hidden value
-    I want the content to be hidden */
+/* I want this to be responsive so i'm using percentage instead of px.
+    I set the margin to auto so we have enough space to the left and right.
+    If something goes out of the div I dont want a
+    scroll bar here so im setting the overflow to a hidden value.
+    Using percentage for responsive designing.
+*/
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
-/* by default unordered lists have paddings so here i set the margin and padding to zero 
-all uls are set to zero margin and o padding */
+/* by default unordered lists have paddings so I set the margin and padding to zero. */
 
 ul {
     margin: 0; 
     padding: 0;
+    list-style: none;
 }
     
 a { 
@@ -79,19 +78,17 @@ p {
 
 header {
     /* 
-    here i set a min height that way if 
+    I set a min height to 70px that way if 
     it's responsive and the screen is smaller
      or the menu goes into the next line we 
-     want the hight to adjust. So the minimum height is going to be 70px 
-    setting the nav border to orange */
+     want the height to adjust. */
+
     background: rgba(128, 0, 0, 0.737);
     min-height: 70px;
     border-bottom: orange 10px solid;
 }
 
-/* header a links 
-setting the text decoration to none for the underline in the a links 
-I set the text to transform by using the text transform property */
+/* I use text-transform property to capitalise the menu text */
 header a {
     color: #ffffff;
     font-weight: bold;
@@ -99,15 +96,15 @@ header a {
     font-size: 16px;
 }
 
-/* setting some designs for the navigation links */
 header li a:hover {
     color: orange;
  }
 
-/* here we set the list to float left */
-/* here we set some padding on the left and right to have some space in bettween the links.
- so im using here the shorthand property padding */
- /* i set the dispaly to inline to it would position next to each other */
+/* I set the menu list to float left and the media links to float right.
+I use shorthand propery padding to set values for the right and left paddings.
+I set the display to inline so it would position next to each other.
+*/
+
 header li {
     display: inline;
     float: left;
@@ -129,22 +126,15 @@ header .medialinks {
     float: right;
 }
 
-/* Media icons */
  .medialinks img {
     width: 30px;
     height: 30px;
     margin-top: 0;
     padding: 0;
  }
-
-
 /* ---------------MAIN CONTENT------------------ */
-/* i set the min height. We want to be flexible everythign should be responsive
-I dont want to put a fixed height so i'll put a min-height. We dont want the image to repeat here so I put a repeat*/
-/* #main {
-    min-height: 400px;
-} */
-/* set the widtht and height of the profile pic */
+
+/* I modified the width and height of the profile pic to fit accordingly */
  .aboutme img {
     width: 90px;
     height: 90px;
@@ -166,7 +156,7 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
     text-align: center;
     margin-top: 10px;
     padding: 15px 0;
-    /* margin: 10px; */
+    border: 1px solid black;
  }
 
  .adventures ul li {
@@ -181,7 +171,6 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
     font-weight: black;
     border-radius: 6px;
     border: 1px solid black;
-    /* margin: 0 15px 0;   */
  }
  
  .adventures a:hover {
@@ -193,21 +182,7 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
     width: 30px;
     height: 15px;
  }
-
- /* @media screen and (min-width: 200px) {
-    .adventures ul {
-        display: block;
-        margin-left: 10px;
-        height: 700;}
-  } */
  
-
- /* Boxes */
-
-
- 
-/* everything is responsive so it's gonna be percentage */
-
   /*----Skills page---- */
 
   .skills h1 {
@@ -223,6 +198,7 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
   }
 
 /*----work page---- */
+
     .work1 h1 {
         margin-top: 30px;
       }
@@ -234,38 +210,59 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
     
 /*----contact page---- */
 
-    .title {
-        font-size: 15px;
-        font-weight: bold;
-    }
+.title {
+    font-size: 15px;
+    font-weight: bold;
+}
 
-    .label {
-        font-weight: bold;
-    }
+.label {
+    font-weight: bold;
+}
 
-    a img {
-        width: 20px;
-        height: 20px;
-    }
+a img {
+    width: 20px;
+    height: 20px;
+}
 
-    input .email_field {
-        background-color: whitesmoke;
-    }
+input .email_field {
+    background-color: whitesmoke;
+}
 
-    .contact_title_bar {
-        color: white;
-        font-size: 13px;
-    }
+.contact_title_bar {
+    color: white;
+    font-size: 13px;
+}
 
-    h4 {
-        margin-top: 0;
-    }
+h4 {
+    margin-top: 0;
+}
 
-    /* Contacts */
+/* Contacts */
 
-    .contacts a:hover {
-        color: maroon;
-        font-weight: bold;
-    }
+.contacts a:hover {
+    color: maroon;
+    font-weight: bold;
+}
 
+/* Travels */
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.country {
+    display: flex;
+}
+
+.country img {
+    width: 10%;
+    height: 10%;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.country p {
+    margin-left: 30px;
+}
 
