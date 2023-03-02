@@ -23,28 +23,36 @@ body {
     overflow: hidden;
 }
 
+@media screen and (min-width: 1400px)  { 
+    .medialinks {
+        float: none;
+        /* display: block; */
+    }
+}
+
+
 /* by default unordered lists have paddings so here i set the margin and padding to zero 
 all uls are set to zero margin and o padding */
 
 ul {
-    margin: 0;
-    padding: 0;
+    margin: 0; 
+    padding: 0; 
 }
-
-/*  eliminated link underline */
-a {
-    text-decoration: none;
+    
+a { 
+    text-decoration: none; 
 }
-
-.home_button {
-    text-align: center;
-    color: black;
+    
+.home_button { 
+    text-align: center; 
+    color: black; 
 }
-
+    
 .home_button img {
-    width: 20px;
-    height: 20px;
+    width: 20px; 
+    height: 20px; 
 }
+    
 .home_button a:hover {
     color: maroon;
     font-weight: bold;
@@ -59,8 +67,8 @@ p {
  footer {
     margin: 0;
     font-size: 10px;
-    color: black;
-    background-color: rgba(128, 128, 128, 0.849);
+    color: white;
+    background-color: rgba(11, 10, 10, 0.792);
     text-align: center;
     font-weight: bold;
  }
@@ -94,15 +102,13 @@ setting the text decoration to none for the underline in the a links
 I set the text to transform by using the text transform property */
 header a {
     color: #ffffff;
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 16px;
 }
 
 /* setting some designs for the navigation links */
-li a{
-    font-weight: bold;
-} 
- li a:hover {
+li a:hover {
     color: orange;
  }
 
@@ -126,6 +132,7 @@ header nav {
     margin-bottom: 0;
 }
 
+
 header .medialinks {
     float: right;
 }
@@ -147,11 +154,11 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
 } */
 /* set the widtht and height of the profile pic */
  .aboutme img {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     margin-top: 1em;
     border-radius: 3em;
-   border: 5px solid orange;
+   border: 5px solid maroon;
  }
 
  .aboutme h1 {
@@ -165,30 +172,52 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
  #entertainment {
     background-color:  rgba(128, 0, 0, 0.737);
     text-align: center;
-    padding: 10px 80px;
+    /* padding: 10px 80px;
+    min-height: 60px; */
+    margin-top: 10px;
+    padding: 15px 0;
  }
+
+ .adventures {
+    display: inline-block;
+ }
+
+ .adventures a{
+    background-color: orange;
+    color: black;
+    font-size: 17px;
+    font-weight: black;
+    border-radius: 6px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin: 0 15px 0; 
+ }
+
+ /* Boxes */
+
+
+ 
 /* everything is responsive so it's gonna be percentage */
-
- /* -------------------------------END OF BOXES---------------------------- */
-
-  /* -------------------------------END OF FOOTER---------------------------- */
 
   /*----Skills page---- */
 
   .skills h1 {
     margin-top: 30px;
   }
+  .skills1 img {
+    height: 30px;
+}
 
   ol {
    font-weight: bold;
   }
 
-    /*----work page---- */
+/*----work page---- */
     .work h1 {
         margin-top: 30px;
       }
     
-    /*----contact page---- */
+/*----contact page---- */
 
     .title {
         font-size: 15px;
@@ -208,11 +237,6 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
         background-color: whitesmoke;
     }
 
-    .home_icon {
-        text-align: center;
-        font-size: large;
-    }
-
     .contact_title_bar {
         color: white;
         font-size: 13px;
@@ -228,3 +252,5 @@ I dont want to put a fixed height so i'll put a min-height. We dont want the ima
         color: maroon;
         font-weight: bold;
     }
+
+
