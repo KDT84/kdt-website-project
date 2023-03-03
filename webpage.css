@@ -64,7 +64,7 @@ p {
 /* NAVIGATION */
 
 header {
-    background: rgba(128, 0, 0, 0.737);
+    background: rgba(13, 121, 145, 0.737);
     min-height: 70px;
     border-bottom: orange 10px solid;
 }
@@ -113,7 +113,7 @@ header .medialinks {
     height: 90px;
     margin-top: 1em;
     border-radius: 3em;
-   border: 5px solid maroon;
+   border: 5px solid rgba(71, 139, 139, 0.855);
  }
 
  .aboutme h1 {
@@ -125,7 +125,7 @@ header .medialinks {
  }
 /* ----Entertainment------ */
  #entertainment {
-    background-color:  rgba(128, 0, 0, 0.737);
+    background-color:  rgba(13, 121, 145, 0.737);
     text-align: center;
     margin-top: 10px;
     padding: 15px 0;
@@ -172,8 +172,12 @@ header .medialinks {
     height: 20px;
 }
 
+.skills1 p {
+    margin-left: 55px;
+}
+
 .html, .css {
-    margin-left: 42px;
+    margin-left: 100px;
 }
 
 /*----work page---- */
