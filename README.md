@@ -9,16 +9,15 @@ This website tells a story about my personal life including the following:
 -Countries I have visited.
 -The Sports I like.
 -My favourite food. 
+
+# ACKNOWLEDGEMENT
+
+-[My Instructor, Frae] (https://academyxi.com/?utm_source=google&utm_medium=organic&utm_campaign=google%20my%20business)
   
 
-# ACKNOWLEDGEMENTS 
+# SOURCES
 
 -[Fontawesome] (https://fontawesome.com/v4/icon/tasks)
-
--[Academy Xi] (https://academyxi.com/?utm_source=google&utm_medium=organic&utm_campaign=google%20my%20business
-https://readme.so/editor)
-
--[My Instructor, Frae] for all the tips.
 
 -[W3 Schools] (https://www.w3schools.com/)
 
@@ -27,7 +26,6 @@ https://readme.so/editor)
 -[Youtube] (https://youtube.com)
 
 - [Lorem generator]
-
 
 
 # AUTHOR
@@ -48,9 +46,12 @@ https://readme.so/editor)
 
 # TECHNOLOGIES
 
-- HTML
+- HTML5
 - CSS
-- 
 
+
+# PROJECT STATUS
+
+-I wanted to add some more and make everything but I don't have the luxury of time but I will update it from time to time. 
 
 
