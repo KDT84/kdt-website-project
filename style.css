@@ -1,6 +1,8 @@
 
-/* Global */
+/* Global */ 
+/* This applies to all affected elements. */
 
+/* I use the shorthand property font in this case to set the font-size(15px), line-height(1.5), and, font-fam(Arial, Helvetica, sans-serif)  */
 body {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     margin: 0;
@@ -8,51 +10,73 @@ body {
     background-color: whitesmoke;
 }
 
+/* I want this to be responsive so I'm using percentage instead of px in this case.
+    I set the margin to auto so there would be enough space on the left and right side when the screen is smaller. 
+    I set the overflow property to hidden value incase something goes out of the container when using smaller screens. */
+
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
+/* I don't want a margin and padding so I set them to 0.
+   I don't want some styling on all uls so I set it to none. */
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
+/* I don't want the underline decoration on a links so I set it to none */
 a {
     text-decoration: none;
 }
+
+/* I want the text to show in the middle so I set the value to center and gave it a black color. */
 
 .home_button {
     text-align: center;
     color: black;
 }
 
+/* I set the width and height of the home icon from fontawesome accordingly. */
 .home_button img {
     width: 30px;
     height: 30px;
 }
 
+/* The text will change its color to maroon when you hover it with a font-weight set to bold */
 .home_button a:hover {
     color: maroon;
     font-weight: bold;
 }
 
+/* All paragraphs are set to font-size of 18px and indented to 50px. I set the text to justify value to have an even sides.   */
 p {
     font-size: 18px;
     text-indent: 50px;
     text-align: justify;
  }
 
+ /* I don't like margins on all sides so I set it to zero.
+    I set the font size to 10px and changed the text color to white.
+    Aligned the text to the center and set its weight to bold for clarity.
+    I changed the background color accordingly. */
+
  footer {
     margin: 0;
     font-size: 10px;
     color: white;
-    background-color: rgba(11, 10, 10, 0.792);
     text-align: center;
     font-weight: bold;
+    background-color: rgba(11, 10, 10, 0.792);
  }
+
+ /* I don't like margins on all side to I set it to zero. 
+    I want some space at the top and bottom so I set its padding to 15px
+    I want to see a lil bit of the border line so I set it to 1px solid black. */
+
 
  footer h2 {
     margin: 0;
@@ -62,6 +86,8 @@ p {
  }
 
 /* NAVIGATION */
+
+/* I want the height to adjust if the screen is smaller or the menu goes to the next line. */
 
 header {
     background: rgba(13, 121, 145, 0.737);
@@ -80,25 +106,27 @@ header li a:hover {
     color: orange;
  }
 
+/* I want the menu to display next to each other so I set the display to inline and float it to left. */
 header li {
     display: inline;
     float: left;
     padding: 0 12px 0 12px;
 }
 
+/* I set the medialinks to float right away from the menu */
+
 header .medialinks {
     float: right;
 }
 
+/* I want some space at the top so I set the top margin to 22px and bottom to zero. */
 header nav {
     margin-top: 22px;
     margin-bottom: 0;
 }
 
-header .medialinks {
-    float: right;
-}
-
+/* I set the images to its size accordingly.
+   I don't like margins and paddings around so I set it to zero. */
  .medialinks img {
     width: 30px;
     height: 30px;
@@ -106,6 +134,9 @@ header .medialinks {
     padding: 0;
  }
 /* ------MAIN CONTENT------- */
+
+/* I set the profile pic size accordingly and added a margin at the top.
+   I set its border radius to 3em to add some beauty and gave it a color of grey. */
 
  .aboutme img {
     width: 90px;
@@ -115,19 +146,28 @@ header .medialinks {
    border: 5px solid grey;
  }
 
+ /* I set the margin top and bottom to zero */
+
  .aboutme h1 {
     margin-bottom: 0;
     margin-top: 0;
  }
+
+ /* I don't like some margins so I set it to zero. */
  .aboutme h3 {
     margin: 0;
  }
  
 /* ----Entertainment------ */
 
+/* I set some space in between the container and the footer. */
+
 .entertainment_container {
     margin-bottom: 230px;
 }
+
+/* I want some space at the top of the container so I set the top margin to 10px and added some
+   paddings at the top and bottom.  */
 
  #entertainment {
     background-color:  rgba(13, 121, 145, 0.737);
@@ -137,6 +177,7 @@ header .medialinks {
     border: 1px solid black;
  }
 
+ /* I want the lis to display next to each other so I set it to inline */
  .adventures ul li {
     display: inline;
     margin-left: 10px;
@@ -156,6 +197,7 @@ header .medialinks {
     font-weight: bold;
  }
 
+ /* I set its image size accordingly */
  .adventures img {
     width: 30px;
     height: 15px;
@@ -163,11 +205,15 @@ header .medialinks {
 
  /* Travels, Books and Photography */
 
+ /* I set the column to 4 using the shorthand repeat and fraction for its unit. */
+
 .image-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* shorthand for setting columns */
     grid-gap: 1em;
 }
+
+/* I want a scroll bar if the content exceeds to its maximun height using overflow auto. */
 
 .image {
     max-width: 100%;
@@ -181,6 +227,7 @@ header .medialinks {
     border: 1px solid black;
 }
 
+/* I set its image sizes accordingly */
 .image img {
     width: 100%;
     height: 90%;
@@ -197,11 +244,13 @@ header .medialinks {
    margin-bottom: 0;
   }
 
+  /* I set its image sizes accordingly */
   .skills1 h1 img {
     width: 50px;
     height: 40px;
 }
 
+/* I set its image sizes accordingly */
 .html img, .css img {
     width: 20px;
     height: 20px;
@@ -217,6 +266,7 @@ header .medialinks {
 
 /*----work page---- */
 
+/* I set its image sizes accordingly */
 .work1 img {
     width: 50px;
     height: 40px;
@@ -238,6 +288,7 @@ header .medialinks {
     font-weight: bold;
 }
 
+/* I set its image sizes accordingly */
 .contacts a img {
     width: 20px;
     height: 20px;
