@@ -1,28 +1,18 @@
+
+/* Global */
+
 body {
-    /* font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px; 
-    line-height: 1.5;  
-    lineheight is the amount of space between each line 
-    below is the shorthand property for the three above */
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
 }
 
-/* I want this to be responsive so i'm using percentage instead of px.
-    I set the margin to auto so we have enough space to the left and right.
-    If something goes out of the div I dont want a
-    scroll bar here so im setting the overflow to a hidden value.
-    Using percentage for responsive designing.
-*/
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
-
-/* by default unordered lists have paddings so I set the margin and padding to zero. */
 
 ul {
     margin: 0; 
@@ -71,24 +61,14 @@ p {
     border: 1px solid black;
  }
 
-
-/* -------------------------------------END OF GLOBAL------------------------- */
-
 /* NAVIGATION */
 
 header {
-    /* 
-    I set a min height to 70px that way if 
-    it's responsive and the screen is smaller
-     or the menu goes into the next line we 
-     want the height to adjust. */
-
     background: rgba(128, 0, 0, 0.737);
     min-height: 70px;
     border-bottom: orange 10px solid;
 }
 
-/* I use text-transform property to capitalise the menu text */
 header a {
     color: #ffffff;
     font-weight: bold;
@@ -100,11 +80,6 @@ header li a:hover {
     color: orange;
  }
 
-/* I set the menu list to float left and the media links to float right.
-I use shorthand propery padding to set values for the right and left paddings.
-I set the display to inline so it would position next to each other.
-*/
-
 header li {
     display: inline;
     float: left;
@@ -115,7 +90,6 @@ header .medialinks {
     float: right;
 }
 
-/* moving the margin here a lil bit down */
 header nav {
     margin-top: 22px;
     margin-bottom: 0;
@@ -132,9 +106,8 @@ header .medialinks {
     margin-top: 0;
     padding: 0;
  }
-/* ---------------MAIN CONTENT------------------ */
+/* ------MAIN CONTENT------- */
 
-/* I modified the width and height of the profile pic to fit accordingly */
  .aboutme img {
     width: 90px;
     height: 90px;
@@ -150,7 +123,7 @@ header .medialinks {
  .aboutme h3 {
     margin: 0;
  }
-/* -----------------------Entertainment------------------------- */
+/* ----Entertainment------ */
  #entertainment {
     background-color:  rgba(128, 0, 0, 0.737);
     text-align: center;
@@ -183,7 +156,7 @@ header .medialinks {
     height: 15px;
  }
  
-  /*----Skills page---- */
+  /*----Skills---- */
 
   .skills h1 {
     margin-top: 30px;
@@ -237,8 +210,6 @@ h4 {
     margin-top: 0;
 }
 
-/* Contacts */
-
 .contacts a:hover {
     color: maroon;
     font-weight: bold;
@@ -246,7 +217,7 @@ h4 {
 
 /* Travels */
 
-.wrapper {
+/* .wrapper {
     width: 80%;
     margin: auto;
 }
@@ -264,5 +235,41 @@ h4 {
 
 .country p {
     margin-left: 30px;
+} */
+
+.image-grid {
+    --gap: 16px;
+    --num-cols:4
+    --row-height:300px;
+
+    box-sizing:border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap)
 }
 
+.image-grid > img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.image-grid-col-2 {
+    grid-row: span 2;
+}
+
+.image-grid-col-2 {
+    grid-column: span 2;
+}
+
+/* anythign under 1024 */
+@media screen and (max-width:1024) {
+    .image-grid{
+        --num-cols: 2;
+        --row-height: 200px;
+    }
+    
+}
