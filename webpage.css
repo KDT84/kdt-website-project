@@ -161,10 +161,9 @@ header .medialinks {
     height: 15px;
  }
 
- /* Travels */
+ /* Travels, Books and Photography */
 
 .image-grid {
-
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* shorthand for setting columns */
     grid-gap: 1em;
@@ -174,7 +173,6 @@ header .medialinks {
     max-width: 100%;
     max-height: 80%;
     overflow: auto;
-   
 }
 
 .image-grid > div {
@@ -192,7 +190,6 @@ header .medialinks {
     font-weight: bold;
     text-align: center;
 }
-
 
   /*----Skills---- */
 
