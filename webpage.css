@@ -30,8 +30,8 @@ a {
 }
     
 .home_button img {
-    width: 20px; 
-    height: 20px; 
+    width: 30px; 
+    height: 30px; 
 }
     
 .home_button a:hover {
@@ -158,29 +158,36 @@ header .medialinks {
  
   /*----Skills---- */
 
-  .skills h1 {
-    margin-top: 30px;
+  .skills1 li {
+   margin-bottom: 0;
   }
-  .skills1 img {
+
+  .skills1 h1 img {
     width: 50px;
     height: 40px;
 }
 
-  ol {
-   font-weight: bold;
-  }
+.html img, .css img {
+    width: 20px;
+    height: 20px;
+}
+
+.html, .css {
+    margin-left: 42px;
+}
 
 /*----work page---- */
 
-    .work1 h1 {
-        margin-top: 30px;
-      }
+.work1 img {
+    width: 50px;
+    height: 40px;
+}
 
-    .work1 img {
-        width: 50px;
-        height: 40px;
-    }
-    
+.companies {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+ 
 /*----contact page---- */
 
 .title {
@@ -192,18 +199,13 @@ header .medialinks {
     font-weight: bold;
 }
 
-a img {
+.contacts a img {
     width: 20px;
     height: 20px;
 }
 
 input .email_field {
     background-color: whitesmoke;
-}
-
-.contact_title_bar {
-    color: white;
-    font-size: 13px;
 }
 
 h4 {
@@ -213,6 +215,10 @@ h4 {
 .contacts a:hover {
     color: maroon;
     font-weight: bold;
+}
+
+iframe {
+    border: 1px solid black;
 }
 
 /* Travels */
@@ -237,39 +243,3 @@ h4 {
     margin-left: 30px;
 } */
 
-.image-grid {
-    --gap: 16px;
-    --num-cols:4
-    --row-height:300px;
-
-    box-sizing:border-box;
-    padding: var(--gap);
-
-    display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap)
-}
-
-.image-grid > img {
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-}
-
-.image-grid-col-2 {
-    grid-row: span 2;
-}
-
-.image-grid-col-2 {
-    grid-column: span 2;
-}
-
-/* anythign under 1024 */
-@media screen and (max-width:1024) {
-    .image-grid{
-        --num-cols: 2;
-        --row-height: 200px;
-    }
-    
-}
