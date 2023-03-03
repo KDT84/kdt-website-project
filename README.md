@@ -7,8 +7,8 @@ This website tells a story about my personal life including the following:
 -Skills
 -Contact Details
 -Countries I have visited.
--The Sports I like.
--My favourite food. 
+-Favourite Books.
+-Photography.
 
 # ACKNOWLEDGEMENT
 
