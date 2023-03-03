@@ -95,7 +95,6 @@ header nav {
     margin-bottom: 0;
 }
 
-
 header .medialinks {
     float: right;
 }
@@ -123,6 +122,7 @@ header .medialinks {
  .aboutme h3 {
     margin: 0;
  }
+ 
 /* ----Entertainment------ */
 
 .entertainment_container {
