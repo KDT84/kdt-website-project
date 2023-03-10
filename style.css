@@ -8,7 +8,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
-    
 }
 
 /* 
@@ -146,7 +145,6 @@ header nav {
     margin-top: 1em;
    border: 5px solid rgba(255, 166, 0, 0.577);
    border-radius: 1em;
-
    
  }
 
@@ -161,14 +159,15 @@ header nav {
  .aboutme h3 {
     margin: 0;
  }
+
  
 /* -----------------------Entertainment------ */
 
 /* I set some space in between the container and the footer. */
 
 .entertainment_container {
-    margin-bottom: 230px;
-}
+    margin-bottom: 362px;
+} 
 
 /* I want some space at the top of the container so I set the top margin to 10px and added some
    paddings at the top and bottom.  */
@@ -245,7 +244,7 @@ header nav {
   /*---------------------Skills--------------- */
 
   .skills_page {
-    height: 100vh;
+    height: 71vh;
   }
 
   .skills1 li {
@@ -286,8 +285,8 @@ header nav {
 }
 
 .workpage {
-    height: 100vh;
-}
+    height: 71vh;
+  }
 /*----------------------contact page-------------- */
 
 .title {
