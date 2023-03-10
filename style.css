@@ -1,6 +1,6 @@
 
 /* Global */ 
-/* This applies to all affected elements. */
+
 
 /* I use the shorthand property font in this case to set the font-size(15px), line-height(1.5), and, font-fam(Arial, Helvetica, sans-serif)  */
 body {
@@ -8,9 +8,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
+    
 }
 
-/* I want this to be responsive so I'm using percentage instead of px in this case.
+/* 
     I set the margin to auto so there would be enough space on the left and right side when the screen is smaller. 
     I set the overflow property to hidden value incase something goes out of the container when using smaller screens. */
 
@@ -85,7 +86,7 @@ p {
     border: 1px solid black;
  }
 
-/* NAVIGATION */
+/*--------------NAVIGATION-------------------- */
 
 /* I want the height to adjust if the screen is smaller or the menu goes to the next line. */
 
@@ -133,7 +134,7 @@ header nav {
     margin-top: 0;
     padding: 0;
  }
-/* ------MAIN CONTENT------- */
+/* ----------------------MAIN CONTENT------- */
 
 /* I set the profile pic size accordingly and added a margin at the top.
    I set its border radius to 3em to add some beauty and gave it a color of grey. */
@@ -158,7 +159,7 @@ header nav {
     margin: 0;
  }
  
-/* ----Entertainment------ */
+/* -----------------------Entertainment------ */
 
 /* I set some space in between the container and the footer. */
 
@@ -187,7 +188,7 @@ header nav {
     background-color: orange;
     color: black;
     font-size: 17px;
-    font-weight: black;
+    font-weight: bold;
     border-radius: 6px;
     border: 1px solid black;
  }
@@ -238,7 +239,7 @@ header nav {
     text-align: center;
 }
 
-  /*----Skills---- */
+  /*---------------------Skills--------------- */
 
   .skills1 li {
    margin-bottom: 0;
@@ -277,7 +278,7 @@ header nav {
     margin-left: 60px;
 }
 
-/*----contact page---- */
+/*----------------------contact page-------------- */
 
 .title {
     font-size: 15px;
@@ -308,7 +309,7 @@ h4 {
 }
 
 iframe {
-    border: 1px solid black;
+    border: 5px solid black;
 }
 
 
